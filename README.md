@@ -24,4 +24,4 @@ Modern, ultra-fast, and minimal website for an IT boutique. Built with **pure HT
 Compliant with EU GDPR regulations. Includes a dedicated `gdpr.html` notice and data processing consent.
 
 ---
-Developed by **pineyardcz s.r.o** | IČO: 19264674 / kontaktni osoba: Pavel Dmitrevskij
+Developed by **Pavel Dmitrevskij** company: pineyardcz s.r.o | IČO: 19264674
