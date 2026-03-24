@@ -1,27 +1,47 @@
-# Poletta.cz — Web Development & Automation Agency
+# Poletta.cz — Digital Lab & Web Development 🚀
 
-Modern, ultra-fast, and minimal website for an IT boutique. Built with **pure HTML/PHP** to ensure millisecond loading times and maximum security.
+![Version](https://img.shields.io/badge/version-1.0.0%20Release-blue.svg)
+![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## 🚀 Key Features
-- **High-End UI:** Professional monochrome aesthetic with smooth scroll-triggered animations.
-- **Multilingual:** Integrated Google Translate widget with a custom clean UI.
-- **Lead Capture:** Secure contact form with honeypot anti-spam protection.
-- **Admin Panel:** Password-protected dashboard to view and manage leads without a database.
-- **Lightweight:** Zero dependencies, zero WordPress bloat.
+A modern, ultra-fast, and premium landing page built for an IT boutique agency. Developed with **pure PHP/HTML/CSS** to guarantee millisecond load times, maximum security, and high conversion rates. Zero bloat, zero dependencies.
+
+![Poletta Preview](https://via.placeholder.com/1000x500.png?text=Poletta.cz+-+Digital+Lab)
+
+## ✨ Key Features (Release v1.0.0)
+
+- ⚡ **Extreme Performance:** Achieves **95+ on Google PageSpeed Mobile**. Features asynchronous font loading, deferred Google Analytics execution, and highly optimized assets.
+- 🌍 **Native Multilingual Routing:** Built-in localization (CS, EN, DE, RU, UK) driven by fast PHP sessions. No heavy JS translation plugins.
+- 🧊 **Hardware-Accelerated 3D:** Features a custom, CSS-only 3D rotating cube background optimized with `will-change: transform` to run at 60 FPS even on mobile devices.
+- 🛡️ **Smart Lead Processing:** - Honeypot anti-spam protection.
+  - Flat-file `.csv` database (fast and easily portable).
+  - Instant admin email notifications.
+  - **Premium HTML Auto-replies:** Automatically sends a beautifully formatted, branded HTML brief to the client upon form submission.
+- 🔐 **Secure Admin Dashboard:** A minimalist, password-protected control panel to view and manage leads without the need for MySQL.
+- ⚖️ **Bulletproof Legal:** Fully compliant with EU GDPR and Czech personal data protection laws (*Zákon č. 110/2019 Sb.*).
 
 ## 🛠 Tech Stack
-- **Frontend:** HTML5, CSS3 (Flex/Grid), Vanilla JavaScript.
+- **Frontend:** HTML5, Modern CSS3 (Grid/Flexbox, 3D Transforms), Vanilla JavaScript.
 - **Backend:** PHP 8.x.
-- **Storage:** Flat-file CSV (Safe & Portable).
+- **Storage:** Flat-file CSV (Safe, lightweight, and GDPR-friendly).
 
-## 🔧 Installation
-1. **Upload** all files to your FTP server.
-2. **Security:** Rename `config.example.php` to `config.php` and set your real password/email.
-3. **Database:** Ensure the server has write permissions for `.csv` files.
-4. **Access:** Your admin panel will be at `yourdomain.cz/admin.php`.
+## 🔧 Installation & Setup
+1. **Upload** all files to your server (Apache/Nginx with PHP 7.4+ support).
+2. **Security Config:** Create a `config.php` file in the root directory and set your admin password:
+   ```php
+   <?php
+   define('ADMIN_PASSWORD', 'YourSecurePasswordHere!');
+   ?>
 
-## ⚖️ Legal
-Compliant with EU GDPR regulations. Includes a dedicated `gdpr.html` notice and data processing consent.
+3. Configure Mail: Update the $admin_email variable in submit.php to receive lead notifications.
 
----
-Developed by **Pavel Dmitrevskij** company: pineyardcz s.r.o | IČO: 19264674
+4. Permissions: Ensure the server has write permissions (CHMOD 664 or 666) for the generated .csv lead files.
+
+5. Access: Log in to your dashboard at yourdomain.com/admin.php.
+
+🔒 Security Note
+Sensitive data (passwords, real email addresses, and client .csv files) are strictly excluded from this repository via .gitignore for security purposes.
+
+Developed by: Pavel Dmitrevskij
+
+Company: pineyardcz s.r.o | IČO: 19264674 | Prague, Czech Republic
