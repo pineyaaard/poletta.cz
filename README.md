@@ -6,7 +6,7 @@
 
 A modern, ultra-fast, and premium landing page built for an IT boutique agency. Developed with **pure PHP/HTML/CSS** to guarantee millisecond load times, maximum security, and high conversion rates. Zero bloat, zero dependencies.
 
-![Poletta Preview](https://via.placeholder.com/1000x500.png?text=Poletta.cz+-+Digital+Lab)
+![Poletta Preview](https://poletta.cz/preview.png)?text=Poletta.cz+-+Digital+Lab)
 
 ## ✨ Key Features (Release v1.0.0)
 
